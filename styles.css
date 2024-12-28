@@ -15,14 +15,11 @@ body {
     width: 80%;
     margin: 0 auto;
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
-    grid-template-areas:
-        "nav nav"
-        "content1 content2"
-        "content3 content4";
-    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic column adjustment */
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    height: auto; /* Remove fixed height for flexibility */
+    align-items: stretch; /* Ensures content fills grid cells */
 }
 
 .container_unterseiten {
