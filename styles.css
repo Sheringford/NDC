@@ -118,8 +118,17 @@ img {
 }
 
 /* Content Styles */
-#content1, #content3, #content4, #content5 {
-    padding: 10px;
+#content1, #content2, #content3, #content4 {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    background: white; /* Adds contrast */
+    text-align: center;
+}
+
+#content1 img, #content4 img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
